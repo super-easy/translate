@@ -29,7 +29,7 @@ type (
 )
 
 //&dj=1&source=icon&oe=UTF-8
-const GOOGLEURL = "http://translate.google.cn/translate_a/single?client=gtx&dt=t&dj=1&ie=UTF-8"
+const GOOGLEURL = "http://translate.google.com/translate_a/single?client=gtx&dt=t&dj=1&ie=UTF-8"
 
 // Srclang get the language identification,return to the default identity Lang when the translation fails
 func Srclang(query string) string {
