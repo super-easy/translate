@@ -2,19 +2,19 @@
 Call Translate api to translate one or more characters
 
 # Installation
->go get github.com/hwfy/translate
+>go get github.com/super-easy/translate
 
 # Example
 ```go
 package main
 
 import (
-	"github.com/hwfy/translate"
+	"github.com/super-easy/translate"
 	"fmt"
 )
 
 func main() {
-	query := "¸ĞĞ»"
+	query := "æ„Ÿè°¢"
 
 	result := translate.Google("zh", "cht", query, "")
 	fmt.Println(result)
@@ -25,7 +25,7 @@ func main() {
 	result = translate.Google("zh", "jp", query, "")
 	fmt.Println(result)
 
-	querys := []string{"ÄãºÃ", "È«Çò"}
+	querys := []string{"ä½ å¥½", "å…¨çƒ"}
 
 	results := translate.Googles("zh", "cht", querys, "")
 	fmt.Println(results)
@@ -37,10 +37,10 @@ func main() {
 	fmt.Println(results)
 }
 // OutPut:
-// ¸ĞÖx
+// æ„Ÿè¬
 // Thank
-// ¤¢¤ê¤¬¤È¤¦¤´¤¶¤¤¤Ş¤¹
-// [ÄãºÃ È«Çò]
+// ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™
+// [ä½ å¥½ å…¨çƒ]
 // [Hello. Global]
-// [¤³¤ó¤Ë¤Á¤Ï ¥°¥í©`¥Ğ¥ë]
+// [ã“ã‚“ã«ã¡ã¯ ã‚°ãƒ­ãƒ¼ãƒãƒ«]
 ```
